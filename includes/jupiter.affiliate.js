@@ -115,7 +115,7 @@ for( var configVariable in configurations ) {
   if( configurations.hasOwnProperty(configVariable) ) {
 	//Be grateful and do not steel other affiliate links & further avoid circular redirection
 	var config = configurations[configVariable];
-	if(url.match(config.rx) && url.indexOf("tag=") == -1) {
+	if(url.match(config.rx) && url.indexOf(config.params[0].param) == -1) {
 	  if(url.indexOf("?") == -1) {
 		url = url + "?" + createTag(config.params);
 	  } else {
