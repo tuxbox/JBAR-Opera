@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="http://www.jupiterbroadcasting.com">
+	<name>Jupiter Broadcasting Opera Affiliate Extension</name>
+	<description>An extension for the use of jupiterbroadcasting.com</description>
+  	<author href="http://www.sniggle.me" email="iulius@sniggle.me">Iulius Gutberlet</author>
+  	<icon src="icons/icon128.png"/>
+</widget>
