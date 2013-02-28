@@ -111,7 +111,7 @@ var configurations = {
 };
 
 var url = window.location.href;
-for( configVariable in configurations ) {
+for( var configVariable in configurations ) {
   if( configurations.hasOwnProperty(configVariable) ) {
 	//Be grateful and do not steel other affiliate links & further avoid circular redirection
 	var config = configurations[configVariable];
