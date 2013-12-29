@@ -1,12 +1,4 @@
 // ==UserScript==
-// @include http://www.amazon.com/*
-// @include http://amazon.com/*
-// @include http://www.amazon.co.uk/*
-// @include http://amazon.co.uk/*
-// @include http://www.amazon.de/*
-// @include http://amazon.de/*
-// @include http://www.amazon.ca/*
-// @include http://amazon.ca/*
 // @include http://www.audible.com/*
 // @include http://audible.com/*
 // @include http://www.mint.com/*
@@ -26,30 +18,6 @@
 // ==/UserScript==
 
 var configurations = {
-  amazon : {
-    rx: /^http.*?\.amazon\.com.*?(\/dp\/|\/o\/asin\/|\/exec\/obidos\/tg\/detail\/|\/gp\/product\/)/i,
-    params: [
-      { param: "tag", paramValue: "thelinactsho-20" }
-    ]
-  },
-  amazonuk : {
-    rx: /^http.*?\.amazon\.co\.uk.*?(\/dp\/|\/o\/asin\/|\/exec\/obidos\/tg\/detail\/|\/gp\/product\/)/i,
-    params: [
-      { param: "tag", paramValue: "jupitebroadc-21" }
-    ]
-  },
-  amazonde : { 
-    rx: /^http.*?\.amazon\.de.*?(\/dp\/|\/o\/asin\/|\/exec\/obidos\/tg\/detail\/|\/gp\/product\/)/i,
-    params: [
-      { param: "tag", paramValue: "jupitebroad02-21" }
-    ]
-  },
-  amazonca : { 
-    rx: /^http.*?\.amazon\.ca.*?(\/dp\/|\/o\/asin\/|\/exec\/obidos\/tg\/detail\/|\/gp\/product\/)/i,
-    params: [
-      { param: "tag", paramValue: "jbcanada-20" }
-    ]
-  },
   audible : { 
     rx: /^http.*?\.audible\.com.*?\/pd\/.*/i,
     params: [
